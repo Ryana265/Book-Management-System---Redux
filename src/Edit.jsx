@@ -18,6 +18,11 @@ function Edit() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    if (!formData.name || !formData.author || !formData.genre) {
+      alert('Please fill out all the fields.');
+      return;
+    }
+
     dispatch(updateBook({ id: book.id, updatedData: formData })); // Correctly dispatch the action
     navigate('/'); // Redirect to home page after submission
 };

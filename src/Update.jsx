@@ -17,6 +17,10 @@ function Update() {
 
   const handleFormSubmit=(e)=>{
     e.preventDefault()
+    if (!formData.name || !formData.author || !formData.genre) {
+      alert('Please fill out all the fields.');
+      return;
+    }
     console.log("form data is:  ",formData)
     dispatch(addBook(formData))
     console.log("Dispatched addBook action"); // Log action dispatch
