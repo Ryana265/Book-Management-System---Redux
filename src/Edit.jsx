@@ -19,7 +19,7 @@ function Edit() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.author || !formData.genre) {
-      alert('Please fill out all the fields.');
+      alert('Please fill out all the fields');
       return;
     }
 
