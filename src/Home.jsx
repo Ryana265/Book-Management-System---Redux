@@ -18,7 +18,7 @@ function Home() {
   return (
     <div className='bg-light min-vh-100'>
       <div className="container py-5">
-        <h2 className='text-center mb-4'>CRUD App with JSON Server</h2>
+        <h2 className='text-center mb-4 text-bold'>Book Vault</h2>
         <div className='text-center mb-4'>
           <Link to='/create' className='btn btn-warning'>Add More Books</Link>
         </div>
